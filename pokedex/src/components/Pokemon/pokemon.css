@@ -17,6 +17,7 @@
     font-size: larger;
     letter-spacing: 0.5rem;
      color: rgb(4, 59, 50);
+     text-decoration: none;
 }
 .pokemon:hover{
     /* background-color: rgb(245, 245, 204); */
