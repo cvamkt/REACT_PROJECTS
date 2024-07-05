@@ -5,15 +5,15 @@ import './pokeDetails.css';
 // import usePokemonList from "../../hooks/usePokemonList";
 import usePokemonDetails from "../../hooks/usePokemonDetails";
 
-function PokemonDetails() {
+function PokemonDetails({ pokemonName }) {
     const { id } = useParams();
-    const [pokemon] = usePokemonDetails(id);
+    const [pokemon] = usePokemonDetails(id, pokemonName);
     // console.log(id);
     // const [pokemon, setPokemon] = useState({});
     // const [loading, setLoading] = useState(true);
     // let pokemonListHookResponse = [];
     // async function downloadPokemons() {
-        
+
     //     const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
     //     // console.log(response.data);
     //     setPokemon({
@@ -48,17 +48,17 @@ function PokemonDetails() {
                 <span>Types:-</span> {pokemon.types &&
                     pokemon.types.map((type) => (<div key={type}>{type}</div >))}
             </div>
-           
-           {
-          pokemon.types && pokemon.similarPokemons && 
-            <div>
-                more {pokemon.types[0]} type pokemons
 
-                <ul>
-               { pokemon.similarPokemons.map((p) => (<li key={p.pokemon.name}>{p.pokemon.name}</li>))}
+            {
+                pokemon.types && pokemon.similarPokemons &&
+                <div>
+                    more {pokemon.types[0]} type pokemons
+
+                    <ul>
+                        {pokemon.similarPokemons.map((p) => (<li key={p.pokemon.name}>{p.pokemon.name}</li>))}
                     </ul>
                 </div>
-           }
+            }
 
         </div>
     );

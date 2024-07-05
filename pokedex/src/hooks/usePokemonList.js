@@ -22,8 +22,8 @@ function usePokemonList() {
             const pokemonResult = response.data.results; //get array of pokemon from result
 
 
-            console.log("response ise", response.data.pokemon);
-            console.log(pokemonListState);
+            // console.log("response ise", response.data.pokemon);
+            // console.log(pokemonListState);
             // console.log(response.data);
             // setNextUrl(response.data.next);
             // setPrevUrl(response.data.previous);
@@ -39,7 +39,7 @@ function usePokemonList() {
 
             const pokemonResultPromise = pokemonResult.map((pokemon) => axios.get(pokemon.url)); //iterate over the array of pokemon
             const pokemonData = await axios.all(pokemonResultPromise); // it will all data after downloded.
-            console.log(pokemonData);
+            // console.log(pokemonData);
             const pokeListResult = pokemonData.map((pokeData) => {  // itrate to each pokemon and extract id,name,image,types
                 const pokemon = pokeData.data;
                 return {
