@@ -11,5 +11,5 @@ https://github.com/cvamkt/REACT_PROJECTS/assets/154726545/8b4037fd-b61b-46e8-b4e
 
 :- Click below and Enjoy this Tic_Tac 👍
 
-https://main--jolly-bienenstitch-5207ef.netlify.app/
+https://gridwarriors.netlify.app/
 
