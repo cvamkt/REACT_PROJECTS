@@ -1,4 +1,0 @@
-[(redirects)]
-from = "/*"
-to = "/app.jsx"
-status = 200
