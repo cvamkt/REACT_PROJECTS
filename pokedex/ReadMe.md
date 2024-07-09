@@ -1,9 +1,9 @@
 :- built a Website which show you details(Image, Name, types, more_similar_types) of our favourite Pokemons using pokeapi in React.js
 
   
-> show you 20 pokemons in every page
->   you can simply touch to any image of pokemon to see their details
->  Or you can search them by typing their name in search box
+:- show you 20 pokemons in every page
+:-   you can simply touch to any image of pokemon to see their details
+:-  Or you can search them by typing their name in search box
 
 
 :- here a video clip
