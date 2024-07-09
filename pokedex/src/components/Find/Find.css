@@ -4,7 +4,7 @@
     
 }
 .search-wrapper ::placeholder{
-    color: rgb(121, 118, 118);
+    color: rgb(245, 221, 221);
 }
 #pokemon-name-search{
     margin-top: 2rem;
