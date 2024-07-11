@@ -3,15 +3,12 @@
 2. FEATURES:-  
 ```
 show you 20 pokemons in every page
-
  ```
 ``` 
 you can simply touch to any image of pokemon to see their details
-
 ```
 ``` 
 Or you can search them by typing their name in search box
-
  ```
 
 
